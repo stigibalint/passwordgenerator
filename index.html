@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Password Generator</h1>
+    
+    <div class="password-container" id="passwordContainer"> 
+        <input type="text" id="pw" name="pw" readonly placeholder="P4$5W0rD!"><i class="fas fa-copy fa-lg" style="margin-left: 65px; color:rgb(164,255,175)"></i>
+
+
+             </div>
+    <div class="container">
+
+      <div class="" id="">
+
+      </div>
+      <div class="options">
+        <div class="slider-container">
+          <label for="charLength">Character Length</label>          <span id="charLengthValue">10</span>
+          <input type="range" id="charLength" name="charLength" min="6" max="20" value="10">
+
+        </div>
+        <div class="checkboxes">
+          <label><input type="checkbox" id="uppercase">Include Uppercase Letters</label>
+          <label><input type="checkbox" id="lowercase">Include Lowercase Letters</label>
+          <label><input type="checkbox" id="numbers">Include Numbers</label>
+          <label><input type="checkbox" id="symbols">Include Symbols</label>
+        </div>
+        <div class="strength-input">
+         
+          <input type="text" id="strength" name="strength" readonly placeholder="STRENGTH">
+        </div>
+        <button id="generateBtn">GENERATE</button>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
