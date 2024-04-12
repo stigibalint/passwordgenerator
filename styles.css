@@ -39,7 +39,8 @@ body {
   }
   
 #copyIcon:hover{
-
+    font-size: 1.7rem;
+    cursor: pointer;
     background-color: #073620;
 }
   
@@ -75,19 +76,44 @@ body {
     font-size: 1rem;
 
   }
-  
 
-  .strength-input input {
-    margin-bottom: 10px;
+
+  .strength-input {
+    position: relative;
+}
+
+.input-wrapper {
+    display: inline-block;
+    position: relative;
     width: 100%;
+}
+
+.strength-bars {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.strength-bar {
+    display: inline-block;
+    width: 30px; 
+    height: 10px; 
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid white;
+    margin-right: 5px; 
+}
+
+.strength-input input {
     padding: 15px;
     font-size: 0.8em;
     border: 1px solid black;
-
     box-sizing: border-box;
     background-color: rgb(24, 23, 31);
-  }
-  
+    width:100%;
+}
+
+
   button {
     width: 100%;
     padding: 20px 30px;

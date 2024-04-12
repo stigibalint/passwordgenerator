@@ -24,7 +24,7 @@
       </div>
       <div class="options">
         <div class="slider-container">
-          <label for="charLength">Character Length</label>          <span id="charLengthValue">10</span>
+          <label for="charLength">Character Length: </label><span id="charLengthValue"> 10</span>
           <input type="range" id="charLength" name="charLength" min="6" max="20" value="10">
 
         </div>
@@ -35,9 +35,18 @@
           <label><input type="checkbox" id="symbols">Include Symbols</label>
         </div>
         <div class="strength-input">
-         
-          <input type="text" id="strength" name="strength" readonly placeholder="STRENGTH">
-        </div>
+
+          <div class="input-wrapper">
+              <input type="text" id="strength" name="strength" readonly placeholder="STRENGTH">
+              <div class="strength-bars">
+                  <span class="strength-bar"></span>
+                  <span class="strength-bar"></span>
+                  <span class="strength-bar"></span>
+                  <span class="strength-bar"></span>
+              </div>
+          </div>
+      </div>
+      
         <button id="generateBtn">GENERATE</button>
 
     </div>
